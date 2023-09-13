@@ -1,0 +1,100 @@
+.header {
+    flex: 1 0 100%;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: 
+            linear-gradient(180deg, 
+                #242B33 11.98%,
+                rgba(45, 52, 60, 0.38) 51.04%, 
+                #242B33 92.19%);
+    }
+    &__container {
+        position: relative;
+        z-index: 3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15px 74px;
+        row-gap: 30px;
+    }
+    &__top {
+        width: 100%;
+        min-height: 66px;
+    }
+    &__title {
+        align-self: center;
+        color: $accent;
+        text-align: center;
+        font-family: $font-accent;
+        font-size: 2.5rem;
+        font-weight: 700;
+        max-width: 566px;
+        span {
+            display: block;
+            padding: 0 0 80px 0;
+        }
+        a {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        position: relative;
+        z-index: 5;
+        img {
+            width: 133px;
+            margin: 0 0 14px 0;
+        }
+        div {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+        }
+    }
+}
+.contacts {
+    width: 100%;
+    font-size: 1.125rem;
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    gap: 15px 98px;
+    &__item {
+        display: grid;
+        grid-template: 1fr / min-content auto;
+        align-items: center;
+        column-gap: 14px;
+        &_right {
+            justify-self: end;
+        }
+    }
+    @media (max-width: 43.75em) {
+        grid-template: repeat(2, 1fr) / 1fr;
+        justify-items: center;
+        &__item {
+            &_right {
+                justify-self: center;
+            }
+        }
+    }
+}
