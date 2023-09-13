@@ -1,0 +1,41 @@
+.benefits {
+    padding: 120px 0;
+    &__container {
+        max-width: 850px;
+        overflow: hidden;
+    }
+    &__body {
+        display: flex;
+        justify-content: center;
+        margin: 0 -35px;
+        row-gap: 35px;
+    }
+    &__item {
+        padding: 0 35px;
+        text-align: center;
+    }
+    &__image {
+        margin: 0 0 53px 0;
+    }
+    &__text {
+        font-family: $font-secondary;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.35;
+    }
+    @media (max-width: 840px) {
+        &__body {
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex: 1 1 50%;
+        }
+    }
+}
+
+.title {
+    color: $accent;
+    font-family: $font-accent;
+    font-size: 2.25rem;
+    font-weight: 700;
+}

@@ -40,9 +40,25 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+
 }
 [class*="__container"] {
     max-width: 1130px;
     padding: 0 15px;
     margin: 0 auto;
+}
+.visually-hidden {
+    /* Contain text within 1px box */
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    /* Remove the layout */
+    position: absolute;
+    /* Remove any visible trace */
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%); /* Browser in the future */
+    /* Prevent the screen reader to skip spaces between words */
+    white-space: nowrap;
+
 }
