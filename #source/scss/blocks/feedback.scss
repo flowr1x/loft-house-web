@@ -1,0 +1,49 @@
+.feedback {
+    padding: 180px 0;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0.00) 50.52%, #242B33 90.1%), 
+            linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%);
+        z-index: 2;
+    }
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    &__container {
+        position: relative;
+        z-index: 3;
+    }
+    &__title {
+        margin: 0 0 17px 0;
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    &__text {
+        line-height: 1.5;
+        p + p {
+            margin: 1em 0 0 0;
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template: repeat(auto-fit, minmax(50px, 1fr)) / repeat(auto-fit, minmax(230px, 1fr));
+    
+        gap: 35px 30px;
+        align-items: center;
+    }
+}
