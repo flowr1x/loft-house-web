@@ -1,0 +1,10 @@
+.map-block {
+  padding: 180px 0;
+}
+.map-block__title {
+  margin: 0 0 88px 0;
+}
+.map-block__map {
+  background: #626262;
+  min-height: 358px;
+}
