@@ -1,10 +1,12 @@
+// Base
 @import "base/variables.scss";
+@import "base/function.scss";
+@import "base/mixins.scss";
 @import "base/normalize.scss";
 @import "base/base.scss";
 
 // Blocks
-@import "blocks/header.scss";
-@import "blocks/header-menu.scss";
+@import "blocks/header/header.scss";
 @import "blocks/benefits.scss";
 @import "blocks/flats.scss";
 @import "blocks/cards.scss";

@@ -1,4 +1,11 @@
 .flats {
+    position: relative;
+    &::after {
+        @include decorNumber;
+        content: "III";
+        top: -10px;
+        left: calc(50% - 555px);
+    }
     &__title {
         margin: 0 0 88px 0;
     }

@@ -1,11 +1,18 @@
 .video-block {
+    position: relative;
+    &::after {
+        @include decorNumber;
+        content: "IV";
+        left: calc(50% + 555px);
+        line-height: 1.55;
+    }
     &__container {
         max-width: 750px;
     }
     &__link {
         position: relative;
         display: block;
-        padding: 0 0 76.4% 0;
+        padding: 0 0 90.4% 0;
         &::before {
             content: "";
             position: absolute;

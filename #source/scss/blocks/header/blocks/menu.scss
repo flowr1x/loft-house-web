@@ -1,0 +1,90 @@
+.menu {
+    &__list {
+        display: flex;
+        li:not(:last-child) {
+            margin: 0 toEm(40) 0 0;
+        }
+    }
+    &__link {
+        font-size: toRem(14);
+        letter-spacing: toEm(0.7);
+    }
+    @include mediaPhone {
+        &__list {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $dark;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            transition: top .3s, visibility .3s;
+            overflow: auto;
+            padding: 110px 15px 50px;
+            visibility: hidden;
+            li:not(:last-child) {
+                margin: 0;
+            }
+            &._active {
+                top: 0;
+                visibility:visible;
+            }
+            &._active::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: $dark;
+                height: 100px;
+            }
+        }
+        &__link {
+            font-size: toRem(28);
+        }
+        &__burger {
+            position: relative;
+            z-index: $layout2;
+            width: 35px;
+            height: 32px;
+            background: transparent;
+            span {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 10%;
+                background-color: #fff;
+            }
+            span:last-child {
+                bottom: 0;
+                transition: all .3s;
+            }
+            span:nth-child(2) {
+                top: 50%;
+                transform: scale(1) translate(0, -50%);
+                transition: all .3s;
+            }
+            span:first-child {
+                top: 0;
+                transition: all .3s;
+            }
+
+            &._active {
+                span:last-child {
+                    bottom: 50%;
+                    transform:rotate(45deg) translate(0, 50%);
+                }
+                span:nth-child(2) {
+                    top: 50%;
+                    transform: scale(0);
+                }
+                span:first-child {
+                    top: 50%;
+                    transform: rotate(-45deg) translate(0, -50%);
+                }
+            }
+        }
+    }
+}

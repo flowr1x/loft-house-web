@@ -15,16 +15,16 @@
        <main class="page ">
 <header class="header">
     <div class="header__container">
-        <div class="header__top top-header">
-            <div class="top-header__logo">
+        <div class="header__top header-top">
+            <div class="header-top__logo">
                 <img src="image/logo.svg" alt="">
             </div>
-            <nav class="top-header__menu menu">
-                <div class="menu__burger">
+            <nav class="header-top__menu menu">
+                <button class="menu__burger">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
                 <ul class="menu__list">
                     <li><a href="#" class="menu__link">О комплексе</a></li>
                     <li><a href="#" class="menu__link">Район</a></li>
@@ -50,79 +50,111 @@
         </div>
     </div>
     <img class="header__bg" src="image/bg.jpg" alt="Bg">
-</header>            <section class="benefits">
-                <div class="benefits__container">
-                    <h2 class="benefits__title title visually-hidden">Преимущества</h2>
-                    <div class="benefits__body">
-                        <div class="benefits__item">
-                            <div class="benefits__image">
-                                <img src="image/icons/bench.svg" alt="Bench">
+</header>            <div class="content">
+                <section class="benefits">
+                    <div class="benefits__container">
+                        <h2 class="benefits__title title visually-hidden">Преимущества</h2>
+                        <div class="benefits__body">
+                            <div class="benefits__item">
+                                <div class="benefits__image">
+                                    <img src="image/icons/bench.svg" alt="Bench">
+                                </div>
+                                <p class="benefits__text">
+                                    Рядом исторические парки и скверы
+                                </p>
                             </div>
-                            <p class="benefits__text">
-                                Рядом исторические парки и скверы
-                            </p>
-                        </div>
-                        <div class="benefits__item">
-                            <div class="benefits__image">
-                                <img src="image/icons/building.svg" alt="Bench">
+                            <div class="benefits__item">
+                                <div class="benefits__image">
+                                    <img src="image/icons/building.svg" alt="Bench">
+                                </div>
+                                <p class="benefits__text">
+                                    Полностью обустроенный
+                                </p>
                             </div>
-                            <p class="benefits__text">
-                                Полностью обустроенный
-                            </p>
-                        </div>
-                        <div class="benefits__item">
-                            <div class="benefits__image">
-                                <img src="../image/icons/fountain.svg" alt="Fountain">
+                            <div class="benefits__item">
+                                <div class="benefits__image">
+                                    <img src="../image/icons/fountain.svg" alt="Fountain">
+                                </div>
+                                <p class="benefits__text">
+                                    10 фонтанов на территории
+                                </p>
                             </div>
-                            <p class="benefits__text">
-                                10 фонтанов на территории
-                            </p>
-                        </div>
-                        <div class="benefits__item">
-                            <div class="benefits__image">
-                                <img src="image/icons/bicycle.svg" alt="Bicycle">
+                            <div class="benefits__item">
+                                <div class="benefits__image">
+                                    <img src="image/icons/bicycle.svg" alt="Bicycle">
+                                </div>
+                                <p class="benefits__text">
+                                    6 км велодорожек
+                                </p>
                             </div>
-                            <p class="benefits__text">
-                                6 км велодорожек
-                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="flats">
-                <div class="flats__container">
-                    <h2 class="flats__title title">Наши квартиры</h2>
-                    <div class="flats__cards cards">
-                        <a href="#" class="cards__item _ibg">
-                            <img class="cards__image" src="image/flats/img1.jpg" alt="Flat 1">
-                            <h3 class="cards__title">Пентхаус “Loft Олимп”</h3>
-                        </a>
-                        <a href="#" class="cards__item _ibg">
-                            <img class="cards__image" src="image/flats/img2.jpg" alt="Flat 2">
-                            <h3 class="cards__title">Апартаменты “Nice Loft”</h3>
-                        </a>
-                        <a href="#" class="cards__item _ibg">
-                            <img class="cards__image" src="image/flats/img3.jpg" alt="Flat 3">
-                            <h3 class="cards__title">Апартаменты “Loft Studio”</h3>
-                        </a>
-                        <a href="#" class="cards__item _ibg">
-                            <img class="cards__image" src="image/flats/img4.jpg" alt="Flat 3">
-                            <h3 class="cards__title">Loft квартира “Престиж”</h3>
+                </section>
+                <section class="flats">
+                    <div class="flats__container">
+                        <h2 class="flats__title title">Наши квартиры</h2>
+                        <div class="flats__cards cards">
+                            <a href="#" class="cards__item _ibg">
+                                <img class="cards__image" src="image/flats/img1.jpg" alt="Flat 1">
+                                <h3 class="cards__title">Пентхаус “Loft Олимп”</h3>
+                            </a>
+                            <a href="#" class="cards__item _ibg">
+                                <img class="cards__image" src="image/flats/img2.jpg" alt="Flat 2">
+                                <h3 class="cards__title">Апартаменты “Nice Loft”</h3>
+                            </a>
+                            <a href="#" class="cards__item _ibg">
+                                <img class="cards__image" src="image/flats/img3.jpg" alt="Flat 3">
+                                <h3 class="cards__title">Апартаменты “Loft Studio”</h3>
+                            </a>
+                            <a href="#" class="cards__item _ibg">
+                                <img class="cards__image" src="image/flats/img4.jpg" alt="Flat 3">
+                                <h3 class="cards__title">Loft квартира “Престиж”</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <img class="feedback__image" src="image/feedback-bg.jpg" alt="Feedback Background">
+                    <div class="feedback__container">
+                        <h2 class="feedback__title title">Хотите посмотреть?</h2>
+                        <div class="feedback__body">
+                            <div class="feedback__text">
+                                <p>
+                                    ЖК LoftHouse – это проект бизнес-класса, расположенный в центре города, на Наб. реки Фонтанки 10-15. Комплекс предлагает своим жильцам квартиры площадью от 40 до 170 кв. м. В здании будет три секции, в которых разместится всего 56 квартир.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback__form form">
+                                <input type="text" class="form__input" placeholder="Вашу имя" name="name-user"autocomplete="off">
+                                <input type="tel" class="form__input" placeholder="Ваш телефон" name="name-tel"autocomplete="off">
+                                <p class="form__privacy">
+                                    *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                                </p>
+                                <button type="submit" class="form__button">Посмотреть район</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="video-block">
+                    <h2 class="video-block__title title visually-hidden">Это заголовок</h2>
+                    <div class="video-block__container">
+                        <a href="#" class="video-block__link">
+                            <img src="image/video-preview.jpg" alt="preview" class="video-block__preview">
+                            <img src="image/icons/play-button.svg" alt="button-play" class="video-block__icon">
                         </a>
                     </div>
-                </div>
-            </section>
-            <section class="feedback">
-                <img class="feedback__image" src="image/feedback-bg.jpg" alt="Feedback Background">
-                <div class="feedback__container">
-                    <h2 class="feedback__title title">Хотите посмотреть?</h2>
-                    <div class="feedback__body">
-                        <div class="feedback__text">
-                            <p>
-                                ЖК LoftHouse – это проект бизнес-класса, расположенный в центре города, на Наб. реки Фонтанки 10-15. Комплекс предлагает своим жильцам квартиры площадью от 40 до 170 кв. м. В здании будет три секции, в которых разместится всего 56 квартир.
-                            </p>
+                </section>
+                <section class="map-block">
+                    <div class="map-block__container">
+                        <h2 class="map-block__title title">Район на карте</h2>
+                        <div class="map-block__map">
+                            <div class="map" id="map"></div>
                         </div>
-                        <form action="#" class="feedback__form form">
+                    </div>
+                </section>
+                <section class="subscribe">
+                    <div class="subscribe__container">
+                        <h2 class="subscribe__title title">Есть вопросы?</h2>
+                        <form action="#" class="subscribe__form form">
                             <input type="text" class="form__input" placeholder="Вашу имя" name="name-user"autocomplete="off">
                             <input type="tel" class="form__input" placeholder="Ваш телефон" name="name-tel"autocomplete="off">
                             <p class="form__privacy">
@@ -131,38 +163,8 @@
                             <button type="submit" class="form__button">Посмотреть район</button>
                         </form>
                     </div>
-                </div>
-            </section>
-            <section class="video-block">
-                <h2 class="video-block__title title visually-hidden">Это заголовок</h2>
-                <div class="video-block__container">
-                    <a href="#" class="video-block__link">
-                        <img src="image/video-preview.jpg" alt="preview" class="video-block__preview">
-                        <img src="image/icons/play-button.svg" alt="button-play" class="video-block__icon">
-                    </a>
-                </div>
-            </section>
-            <section class="map-block">
-                <div class="map-block__container">
-                    <h2 class="map-block__title title">Район на карте</h2>
-                    <div class="map-block__map">
-                        <div class="map" id="map"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="subscribe">
-                <div class="subscribe__container">
-                    <h2 class="subscribe__title title">Есть вопросы?</h2>
-                    <form action="#" class="subscribe__form form">
-                        <input type="text" class="form__input" placeholder="Вашу имя" name="name-user"autocomplete="off">
-                        <input type="tel" class="form__input" placeholder="Ваш телефон" name="name-tel"autocomplete="off">
-                        <p class="form__privacy">
-                            *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
-                        </p>
-                        <button type="submit" class="form__button">Посмотреть район</button>
-                    </form>
-                </div>
-            </section>
+                </section>
+            </div>
 <footer class="footer">
     <div class="footer__container">
         <div class="footer__body">

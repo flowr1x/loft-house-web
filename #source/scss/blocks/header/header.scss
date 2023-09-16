@@ -1,0 +1,54 @@
+@import "blocks/header-top.scss";
+@import "blocks/menu.scss";
+@import "blocks/contacts.scss";
+
+.header {
+    flex: 1 0 100%;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: $layout2;
+        background: 
+            linear-gradient(180deg, 
+                #242B33 11.98%,
+                rgba(45, 52, 60, 0.38) 51.04%, 
+                #242B33 92.19%);
+    }
+    &__container {
+        position: relative;
+        z-index: $layout3;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15px 74px;
+        row-gap: 30px;
+    }
+    &__title {
+        align-self: center;
+        color: $accent;
+        text-align: center;
+        font-family: $font-accent;
+        @include responseValue("font-size", 24, 40);
+        font-weight: 700;
+        max-width: toRem(566);
+        span {
+            display: block;
+            @include responseValue("padding-bottom", 30, 80)
+        }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+

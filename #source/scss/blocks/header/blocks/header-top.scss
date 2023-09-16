@@ -1,0 +1,15 @@
+.header-top {
+    width: 100%;
+    min-height: toRem($header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        position: relative;
+        z-index: $layout2;
+        img {
+            max-width: 133px;
+            margin: 0 0 14px 0;
+        }
+    }
+}

@@ -14,8 +14,10 @@ body {
             color: $accent;
         }
     }
+    &._lock .page {
+        overflow: hidden;
+    }
 }
-
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -43,9 +45,19 @@ body {
     overflow-x: hidden;
 }
 [class*="__container"] {
-    max-width: 1130px;
+    max-width: toRem($container);
     padding: 0 15px;
     margin: 0 auto;
+
+    @include mediaContainer {
+        max-width: toEm($tablet);
+    }
+    @include mediaTablet {
+        max-width: toEm($phone);
+    }
+    @include mediaPhone {
+        width: 100%;
+    }
 }
 .visually-hidden {
     /* Contain text within 1px box */
@@ -60,5 +72,9 @@ body {
     clip-path: inset(50%); /* Browser in the future */
     /* Prevent the screen reader to skip spaces between words */
     white-space: nowrap;
+}
 
+// work config
+.none {
+    display: none !important;
 }

@@ -1,0 +1,26 @@
+.contacts {
+    width: 100%;
+    font-size: toRem(18);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 98px;
+    &__item {
+        display: grid;
+        grid-template-columns: min-content auto;
+        align-items: center;
+        column-gap: 14px;
+        &_right {
+            justify-self: end;
+        }
+    }
+    @include mediaPhone {
+        font-size: toRem(14);
+        grid-template: repeat(2, 1fr) / 1fr;
+        justify-items: center;
+        &__item {
+            &_right {
+                justify-self: center;
+            }
+        }
+    }
+}
