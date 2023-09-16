@@ -1,0 +1,6 @@
+.title {
+    color: $accent;
+    font-family: $font-accent;
+    @include responseValue("font-size", $title-fz-min, $title-fz-max);
+    font-weight: 700;
+}

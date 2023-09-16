@@ -1,0 +1,18 @@
+.footer-nav {
+    &__list {
+        li {
+            margin: 0 0 toEm(15) 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    &__link {
+        font-size: toRem(14);
+        letter-spacing: toEm(0.7);
+        &_bold {
+            font-weight: 700;
+            color: $accent;
+        }
+    }
+}

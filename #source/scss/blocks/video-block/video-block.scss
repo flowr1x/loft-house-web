@@ -1,5 +1,6 @@
 .video-block {
     position: relative;
+    overflow: hidden;
     &::after {
         @include decorNumber;
         content: "IV";

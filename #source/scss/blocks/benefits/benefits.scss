@@ -1,0 +1,51 @@
+@import "blocks/title.scss";
+
+.benefits {
+    @include responseValue("padding-top", 20, 120);
+    @include responseValue("padding-bottom", 20, 120);
+    position: relative;
+    overflow:hidden;
+    &::after {
+        content: "II";
+        left: calc(50% + #{$container / 2 + px});
+        @include decorNumber
+    }
+    &__container {
+        max-width: toRem(824);
+    }
+    &__body {
+        display: grid;
+        grid-template: 1fr / repeat(auto-fit, minmax(170px, 1fr));
+        gap: 35px;
+        position: relative;
+    }
+    &__item {
+        text-align: center;
+    }
+    &__image {
+        margin: 0 0 toEm(53) 0;
+        height: 80px;
+        img {
+            max-height: 100%;
+        }
+    }
+    &__text {
+        font-family: $font-secondary;
+        font-size: toRem(20);
+        font-weight: 300;
+        line-height: 1.35;
+    }
+    @include mediaTablet {
+        &__body {
+            grid-template: 1fr / repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        &__image {
+            margin: 0 0 toEm(30) 0;
+            height: 50px;
+        }
+        &__text {
+            font-size: toRem(14);
+        }
+    }
+}

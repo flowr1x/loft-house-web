@@ -1,0 +1,23 @@
+@import "blocks/footer-nav.scss";
+
+.footer {
+    background-color: $footer-bg;
+    @include responseValue("padding-top", 25, 50);
+    @include responseValue("padding-bottom", 25, 50);
+    &__body {
+        display: grid;
+        align-items: start;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        row-gap: 30px;
+    }
+    &__address {
+        & > *:not(:last-child) {
+            margin: 0 0 toEm(20) 0;
+        }
+    }
+    &__social {
+        display: flex;
+        column-gap: 22px;
+        align-items: center;
+    }
+}

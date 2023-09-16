@@ -1,16 +1,17 @@
 .map-block {
-    padding: 180px 0;
+    @include responseValue("padding-top", 30, 180);
+    @include responseValue("padding-bottom", 30, 180);
     position: relative;
     &::after {
         @include decorNumber;
         top: 180px;
         content: "V";
-        left: calc(50% - 555px);
+        left: calc(50% - #{$container / 2 + px});
         line-height: 1;
         z-index: - 1;
     }
     &__title {
-        margin: 0 0 88px 0;
+        @include responseValue("margin-bottom", $title-bottom-min, $title-bottom-max);
     }
 }
 .map {

@@ -1,0 +1,14 @@
+@import "blocks/cards.scss";
+
+.flats {
+    position: relative;
+    &::after {
+        @include decorNumber;
+        content: "III";
+        top: -10px;
+        left: calc(50% - #{$container / 2 + px});
+    }
+    &__title {
+        @include responseValue("margin-bottom", $title-bottom-min, $title-bottom-max);
+    }
+}

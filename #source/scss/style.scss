@@ -7,12 +7,10 @@
 
 // Blocks
 @import "blocks/header/header.scss";
-@import "blocks/benefits.scss";
-@import "blocks/flats.scss";
-@import "blocks/cards.scss";
-@import "blocks/feedback.scss";
-@import "blocks/form.scss";
-@import "blocks/video-block.scss";
-@import "blocks/map-block.scss";
-@import "blocks/subscribe.scss";
-@import "blocks/footer.scss";
+@import "blocks/benefits/benefits.scss";
+@import "blocks/flats/flats.scss";
+@import "blocks/feedback/feedback.scss";
+@import "blocks/video-block/video-block.scss";
+@import "blocks/map-block/map-block.scss";
+@import "blocks/subscribe/subscribe.scss";
+@import "blocks/footer/footer.scss";
