@@ -41,6 +41,14 @@
             display: block;
             @include responseValue("padding-bottom", 30, 80)
         }
+        &-link{
+            & svg path {
+                transition: all .3s;
+            }
+            &:hover svg path{
+                fill: $white;
+            }
+        }   
     }
     &__bg {
         position: absolute;

@@ -314,12 +314,17 @@ body._lock .page {
   -ms-grid-column-align: end;
       justify-self: end;
 }
+.contacts__item svg path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.contacts__item:hover svg path {
+  fill: #D4C17F;
+}
 @media (max-width: 47.9375em) {
   .contacts {
     font-size: 0.875rem;
-    -ms-grid-rows: (1fr)[2];
-    -ms-grid-columns: 1fr;
-        grid-template: repeat(2, 1fr)/1fr;
+    grid-template: repeat(2, 1fr)/1fr;
     justify-items: center;
   }
   .contacts__item_right {
@@ -371,29 +376,20 @@ body._lock .page {
   color: #D4C17F;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: 40px;
-  font-size: 40px;
+  font-size: calc(24px + 16 * ((100vw - 320px) / 1600));
   font-weight: 700;
   max-width: 35.375rem;
 }
-@media (max-width: 70.625em) {
-  .header__title {
-    font-size: calc(24px + 16 * ((100vw - 320px) / 810));
-  }
-}
-@media (min-width: 1920px) {
-  .header__title {
-    font-size: calc(24px + 16 * ((100vw - 320px) / 1600));
-  }
-}
 .header__title span {
   display: block;
-  padding-bottom: 80px;
+  padding-bottom: calc(30px + 50 * ((100vw - 320px) / 1600));
 }
-@media (max-width: 70.625em) {
-  .header__title span {
-    padding-bottom: calc(30px + 50 * ((100vw - 320px) / 810));
-  }
+.header__title-link svg path {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header__title-link:hover svg path {
+  fill: #fff;
 }
 .header__bg {
   position: absolute;
@@ -408,30 +404,15 @@ body._lock .page {
 .title {
   color: #D4C17F;
   font-family: "Playfair Display", serif;
-  font-size: 36px;
+  font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
   font-weight: 700;
-}
-@media (max-width: 70.625em) {
-  .title {
-    font-size: calc(24px + 12 * ((100vw - 320px) / 810));
-  }
 }
 
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: calc(20px + 100 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(20px + 100 * ((100vw - 320px) / 1600));
   position: relative;
   overflow: hidden;
-}
-@media (max-width: 70.625em) {
-  .benefits {
-    padding-top: calc(20px + 100 * ((100vw - 320px) / 810));
-  }
-}
-@media (max-width: 70.625em) {
-  .benefits {
-    padding-bottom: calc(20px + 100 * ((100vw - 320px) / 810));
-  }
 }
 .benefits::after {
   content: "II";
@@ -540,16 +521,11 @@ body._lock .page {
 }
 .cards__title {
   font-family: Raleway, sans-serif;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
   position: absolute;
   bottom: 50px;
   left: 44px;
   z-index: 25;
-}
-@media (max-width: 70.625em) {
-  .cards__title {
-    font-size: calc(16px + 8 * ((100vw - 320px) / 810));
-  }
 }
 @media (max-width: 62em) {
   .cards {
@@ -578,12 +554,7 @@ body._lock .page {
   left: calc(50% - 565px);
 }
 .flats__title {
-  margin-bottom: 88px;
-}
-@media (max-width: 70.625em) {
-  .flats__title {
-    margin-bottom: calc(20px + 68 * ((100vw - 320px) / 810));
-  }
+  margin-bottom: calc(20px + 68 * ((100vw - 320px) / 1600));
 }
 
 .form__input {
@@ -643,8 +614,8 @@ body._lock .page {
 .feedback {
   padding: 180px 0;
   position: relative;
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: calc(30px + 150 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(30px + 150 * ((100vw - 320px) / 1600));
 }
 .feedback::after {
   content: "";
@@ -682,20 +653,10 @@ body._lock .page {
 }
 .feedback__text {
   line-height: 1.5;
-  font-size: 16px;
-}
-@media (max-width: 70.625em) {
-  .feedback__text {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 810));
-  }
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
 }
 .feedback__text p + p {
-  margin-bottom: 16px;
-}
-@media (max-width: 70.625em) {
-  .feedback__text p + p {
-    margin-bottom: calc(10px + 6 * ((100vw - 320px) / 810));
-  }
+  margin-bottom: calc(10px + 6 * ((100vw - 320px) / 1600));
 }
 .feedback__form {
   display: -ms-grid;
@@ -705,16 +666,6 @@ body._lock .page {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media (max-width: 70.625em) {
-  .feedback {
-    padding-top: calc(30px + 150 * ((100vw - 320px) / 810));
-  }
-}
-@media (max-width: 70.625em) {
-  .feedback {
-    padding-bottom: calc(30px + 150 * ((100vw - 320px) / 810));
-  }
 }
 
 .video-block {
@@ -787,19 +738,9 @@ body._lock .page {
 }
 
 .map-block {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: calc(30px + 150 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(30px + 150 * ((100vw - 320px) / 1600));
   position: relative;
-}
-@media (max-width: 70.625em) {
-  .map-block {
-    padding-top: calc(30px + 150 * ((100vw - 320px) / 810));
-  }
-}
-@media (max-width: 70.625em) {
-  .map-block {
-    padding-bottom: calc(30px + 150 * ((100vw - 320px) / 810));
-  }
 }
 .map-block::after {
   position: absolute;
@@ -819,12 +760,7 @@ body._lock .page {
   z-index: -1;
 }
 .map-block__title {
-  margin-bottom: 88px;
-}
-@media (max-width: 70.625em) {
-  .map-block__title {
-    margin-bottom: calc(20px + 68 * ((100vw - 320px) / 810));
-  }
+  margin-bottom: calc(20px + 68 * ((100vw - 320px) / 1600));
 }
 
 .map {
@@ -833,20 +769,10 @@ body._lock .page {
 }
 
 .subscribe {
-  padding-bottom: 191px;
-}
-@media (max-width: 70.625em) {
-  .subscribe {
-    padding-bottom: calc(30px + 161 * ((100vw - 320px) / 810));
-  }
+  padding-bottom: calc(30px + 161 * ((100vw - 320px) / 1600));
 }
 .subscribe__title {
-  margin-bottom: 38px;
-}
-@media (max-width: 70.625em) {
-  .subscribe__title {
-    margin-bottom: calc(18px + 20 * ((100vw - 320px) / 810));
-  }
+  margin-bottom: calc(18px + 20 * ((100vw - 320px) / 1600));
 }
 .subscribe__form {
   display: -ms-grid;
@@ -880,18 +806,8 @@ body._lock .page {
 
 .footer {
   background-color: #2D343C;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-@media (max-width: 70.625em) {
-  .footer {
-    padding-top: calc(25px + 25 * ((100vw - 320px) / 810));
-  }
-}
-@media (max-width: 70.625em) {
-  .footer {
-    padding-bottom: calc(25px + 25 * ((100vw - 320px) / 810));
-  }
+  padding-top: calc(25px + 25 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(25px + 25 * ((100vw - 320px) / 1600));
 }
 .footer__body {
   display: -ms-grid;
@@ -915,4 +831,11 @@ body._lock .page {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.footer__social svg path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.footer__social a:hover svg path {
+  fill: #D4C17F;
 }

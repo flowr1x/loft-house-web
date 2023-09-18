@@ -12,6 +12,12 @@
         &_right {
             justify-self: end;
         }
+        & svg path {
+            transition: fill .3s;
+        }
+        &:hover svg path {
+            fill: $accent;
+        }
     }
     @include mediaPhone {
         font-size: toRem(14);

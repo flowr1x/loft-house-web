@@ -19,5 +19,11 @@
         display: flex;
         column-gap: 22px;
         align-items: center;
+        & svg path {
+            transition: fill .3s;
+        }
+        & a:hover svg path {
+            fill: $accent;
+        }
     }
 }
