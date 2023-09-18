@@ -1,3 +1,4 @@
+// Added classes for menu burger
 let menuBurger = document.querySelector(".menu__burger");
 let menuList = document.querySelector(".menu__list");
 

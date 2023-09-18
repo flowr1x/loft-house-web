@@ -1,3 +1,4 @@
 "use strict"
 
-// @prepros-append burger-menu.js
+// @prepros-append burgerMenu.js
+// @prepros-append smoothScroll.js
