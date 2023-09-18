@@ -164,10 +164,6 @@ body._lock .page {
   white-space: nowrap;
 }
 
-.none {
-  display: none !important;
-}
-
 .header-top {
   width: 100%;
   min-height: 4.125rem;
@@ -376,12 +372,18 @@ body._lock .page {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 40px;
+  font-size: 40px;
   font-weight: 700;
   max-width: 35.375rem;
 }
 @media (max-width: 70.625em) {
   .header__title {
     font-size: calc(24px + 16 * ((100vw - 320px) / 810));
+  }
+}
+@media (min-width: 1920px) {
+  .header__title {
+    font-size: calc(24px + 16 * ((100vw - 320px) / 1600));
   }
 }
 .header__title span {

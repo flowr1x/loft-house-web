@@ -34,7 +34,7 @@
         color: $accent;
         text-align: center;
         font-family: $font-accent;
-        @include responseValue("font-size", 24, 40);
+        @include responseValue("font-size", 24, 40, 0);
         font-weight: 700;
         max-width: toRem(566);
         span {
